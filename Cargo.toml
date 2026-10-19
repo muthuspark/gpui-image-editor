@@ -1,0 +1,13 @@
+[package]
+name = "gpui-image-editor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1"
+gpui = "=0.2.2"
+image = { version = "=0.25.9", default-features = false, features = ["png", "jpeg"] }
+
+[dev-dependencies]
+png = "=0.18.1"
+tempfile = "=3.27.0"
