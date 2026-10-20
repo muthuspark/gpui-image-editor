@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "name": "format",
+      "command": ["cargo", "fmt", "--check"]
+    },
+    {
+      "name": "test",
+      "command": ["cargo", "test", "--locked", "-j", "2"]
+    },
+    {
+      "name": "clippy",
+      "command": ["cargo", "clippy", "--locked", "--all-targets", "-j", "2", "--", "-D", "warnings"]
+    },
+    {
+      "name": "build",
+      "command": ["cargo", "build", "--locked", "-j", "2"]
+    }
+  ],
+  "browser": false
+}
